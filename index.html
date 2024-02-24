@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Love You</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <main>
+    <!-- Open the modal using ID.showModal() method -->
+    <div class="h-96 w-96 flex justify-center items-center">
+      <button class="btn bg-pink-400 text-xl font-bold text-white" onclick="my_modal_5.showModal()">Click Me</button>
+    </div>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg font-bold">Arifa Sultana</h3>
+        <p class="py-4 text-black font-bold">Please sent some pictures BABE!</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn bg-pink-400 text-white">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <script src="tailwind.config.js"></script>
+</body>
+</html>
